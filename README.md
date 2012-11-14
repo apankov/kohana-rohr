@@ -20,49 +20,49 @@ Module will make usage of routes with verbs according to table below (as far as 
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/photos`</td>
+    <td>/photos</td>
     <td>index</td>
     <td>display a list of all photos</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/photos/new`</td>
+    <td>/photos/new</td>
     <td>new</td>
     <td>return an HTML form for creating a new photo</td>
   </tr>
   <tr>
     <td>POST</td>
-    <td>`/photos`</td>
+    <td>/photos</td>
     <td>create</td>
     <td>create a new photo</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/photos/:id`</td>
+    <td>/photos/:id</td>
     <td>show</td>
     <td>display a specific photo</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/photos/:id/edit`</td>
+    <td>/photos/:id/edit</td>
     <td>edit</td>
     <td>return an HTML form for editing a photo</td>
   </tr>
   <tr>
     <td>PUT</td>
-    <td>`/photos/:id`</td>
+    <td>/photos/:id</td>
     <td>update</td>
     <td>update a specific photo</td>
   </tr>
   <tr>
     <td>PATCH</td>
-    <td>`/photos/:id`</td>
+    <td>/photos/:id</td>
     <td>patch</td>
     <td>partially update a specific photo</td>
   </tr>
   <tr>
     <td>DELETE</td>
-    <td>`/photos/:id`</td>
+    <td>/photos/:id</td>
     <td>destroy</td>
     <td>delete a specific photo</td>
   </tr>
