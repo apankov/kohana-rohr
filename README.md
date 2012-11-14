@@ -9,18 +9,64 @@ Instead of creating bunch of RESTful routes in bootstrap one can use just
 Route::resource('photos');
 ```
 
-Module will make usage of routes with verbs according to table below (as far as I know RoR has similar):
+Module will make usage of routes with verbs according to table below (as far as I remember RoR has similar):
 
-| Verb   | Path             | action  | used for                                     |
-|--------+------------------+---------+----------------------------------------------|
-| GET    | /photos          | index   | display a list of all photos                 |
-| GET    | /photos/new      | new     | return an HTML form for creating a new photo |
-| POST   | /photos          | create  | create a new photo                           |
-| GET    | /photos/:id      | show    | display a specific photo                     |
-| GET    | /photos/:id/edit | edit    | return an HTML form for editing a photo      |
-| PUT    | /photos/:id      | update  | update a specific photo                      |
-| PATCH  | /photos/:id      | patch   | partially update a specific photo            |
-| DELETE | /photos/:id      | destroy | delete a specific photo                      |
+<table>
+  <tr>
+    <th>Verb</th>
+    <th>Path</th>
+    <th>Action</th>
+    <th>Used for</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/photos`</td>
+    <td>index</td>
+    <td>display a list of all photos</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/photos/new`</td>
+    <td>new</td>
+    <td>return an HTML form for creating a new photo</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>`/photos`</td>
+    <td>create</td>
+    <td>create a new photo</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/photos/:id`</td>
+    <td>show</td>
+    <td>display a specific photo</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/photos/:id/edit`</td>
+    <td>edit</td>
+    <td>return an HTML form for editing a photo</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>`/photos/:id`</td>
+    <td>update</td>
+    <td>update a specific photo</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>`/photos/:id`</td>
+    <td>patch</td>
+    <td>partially update a specific photo</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>`/photos/:id`</td>
+    <td>destroy</td>
+    <td>delete a specific photo</td>
+  </tr>
+</table>
 
 
 To finish RESTful functionality one has to implement controller that extends `Controller_Common_Resources`
@@ -57,4 +103,3 @@ Route::extend_resource('users',
   ),
   $options_api);
 ```
-
